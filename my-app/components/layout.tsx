@@ -2,12 +2,17 @@ import Navbar from "./navbar";
 import Footer from "./footer";
 import Providers from "./providers";
 
-export default function Layout({ children }) {
+const Layout = (props: any) => {
   return (
     <>
-      <Navbar />
-      <Providers>{children}</Providers>
-      <Footer />
+      <div className="container2 m-auto">
+        <Navbar />
+        <Providers>
+          <div>{props.children}</div>
+        </Providers>
+        <Footer />
+      </div>
     </>
   );
-}
+};
+export default Layout;

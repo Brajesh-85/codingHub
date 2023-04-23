@@ -27,8 +27,8 @@ const ThemeSwitch = () => {
         <option value="light">Light</option>
       </select> */}
       <div className="bg-light-gray-500 hover:bg-dark-700 float-right flex cursor-pointer flex-wrap p-1">
-        <span className="px-2 text-sm font-medium text-gray-900 hover:text-blue-600 dark:text-gray-300">
-          Change theme
+        <span className="px-2 text-sm font-small text-gray-900 hover:text-blue-600 dark:text-gray-300">
+          change theme
         </span>
         {currentTheme === "dark" ? (
           <BsFillMoonFill
