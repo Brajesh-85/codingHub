@@ -8,8 +8,7 @@ const NewsCard = () => {
 
   const newsResults = async () => {
     const getList: any = await NewsListing();
-    // console.log(getList);
-    if (getList.status === "ok" && getList.articles) {
+    if (getList?.status === 200 && getList?.articles) {
       setLoadNews(getList.articles);
     } else {
       setLoadNews(false);

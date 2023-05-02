@@ -20,9 +20,12 @@ const Navbar = () => {
       <nav className="bg-white border-gray-200 dark:bg-gray-900">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <div className="flex items-center">
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+            <a
+              href={"/"}
+              className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+            >
               CodingHub
-            </span>
+            </a>
           </div>
 
           <div
@@ -34,7 +37,7 @@ const Navbar = () => {
                 <Link
                   id={"1"}
                   onClick={handleClick}
-                  href={"/testapi/general?id=1"}
+                  href={"/general?id=1"}
                   aria-current="page"
                   className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
                 >
@@ -45,7 +48,7 @@ const Navbar = () => {
                 <Link
                   id={"2"}
                   onClick={handleClick}
-                  href={"/testapi/business?id=2"}
+                  href={"/business?id=2"}
                   className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Business
@@ -55,7 +58,7 @@ const Navbar = () => {
                 <Link
                   id={"3"}
                   onClick={handleClick}
-                  href={"/testapi/entertainment?id=3"}
+                  href={"/entertainment?id=3"}
                   className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Entertainment
@@ -65,7 +68,7 @@ const Navbar = () => {
                 <Link
                   id={"4"}
                   onClick={handleClick}
-                  href={"/testapi/health?id=4"}
+                  href={"/health?id=4"}
                   className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Health
@@ -75,7 +78,7 @@ const Navbar = () => {
                 <Link
                   id={"5"}
                   onClick={handleClick}
-                  href={"/testapi/sports?id=5"}
+                  href={"/sports?id=5"}
                   className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Sports
@@ -85,7 +88,7 @@ const Navbar = () => {
                 <Link
                   id={"6"}
                   onClick={handleClick}
-                  href={"/testapi/science?id=5"}
+                  href={"/science?id=5"}
                   className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Science
@@ -95,7 +98,7 @@ const Navbar = () => {
                 <Link
                   id={"7"}
                   onClick={handleClick}
-                  href={"/testapi/technology?id=5"}
+                  href={"/technology?id=5"}
                   className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Technology

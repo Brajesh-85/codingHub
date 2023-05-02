@@ -3,7 +3,7 @@ module.exports = {
   darkMode: ["class"],
   content: [
     "./app/**/*.tsx",
-    // "./pages/**/*.tsx",
+    "./pages/**/*.tsx",
     "./components/**/*.tsx",
     "./node_modules/flowbite/**/*.js",
   ],
