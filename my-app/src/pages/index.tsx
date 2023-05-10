@@ -11,8 +11,7 @@ export default function Home() {
           <ThemeButton />
           <div className="mt-4 pt-4" style={{ clear: "both" }}></div>
           <PageTitle mainTitle={"All types of News"}></PageTitle>
-          <div className="flex items-center justify-between">
-            hi
+          <div className="flex flex-wrap justify-between">
             <NewsCard />
           </div>
         </div>

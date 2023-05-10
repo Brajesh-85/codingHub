@@ -11,7 +11,7 @@ export default function Business() {
           <ThemeButton />
           <div className="mt-4 pt-4" style={{ clear: "both" }}></div>
           <PageTitle mainTitle={"Business"}></PageTitle>
-          <div className="flex items-center justify-between">
+          <div className="flex flex-wrap justify-between">
             <NewsCard />
           </div>
         </div>

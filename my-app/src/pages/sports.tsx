@@ -11,7 +11,7 @@ export default function Sports() {
           <ThemeButton />
           <div className="mt-4 pt-4" style={{ clear: "both" }}></div>
           <PageTitle mainTitle={"Sports"}></PageTitle>
-          <div className="flex items-center justify-between">
+          <div className="flex flex-wrap justify-between">
             <NewsCard />
           </div>
         </div>

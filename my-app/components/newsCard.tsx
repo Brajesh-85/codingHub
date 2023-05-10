@@ -1,14 +1,14 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import NewsListing from "./newsService";
-import Image from "next/image";
+//import Image from "next/image";
 
 const NewsCard = () => {
   const [loadNews, setLoadNews] = useState([] as any);
 
   const newsResults = async () => {
     const getList: any = await NewsListing();
-    if (getList?.status === 200 && getList?.articles) {
+    if (getList?.articles) {
       setLoadNews(getList.articles);
     } else {
       setLoadNews(false);
@@ -30,7 +30,7 @@ const NewsCard = () => {
               key={index}
             >
               <a href="#">
-                <Image
+                <img
                   className="rounded-t-lg"
                   src={
                     !item.urlToImage
@@ -38,7 +38,8 @@ const NewsCard = () => {
                       : item.urlToImage
                   }
                   alt="cardImage"
-                  style={{ width: "100%" }}
+                  style={{width:"100%"}}
+                 
                 />
               </a>
               <div className="p-5">
