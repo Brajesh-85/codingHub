@@ -14,7 +14,7 @@ const NewsCard = () => {
       setLoadNews(false);
       console.log("No data found");
     }
-  };
+  }
 
   useEffect(() => {
     newsResults();
