@@ -9,12 +9,10 @@ const newsService = () => {
       .then(async(response: any) => {
         //console.log(response, response.status === 200)
         let data = await response.json();
-        //.log(data);
-        if (data.status === "ok" && data.articles) resolve(data);
-        
-       // else {
-         // reject(response);
-        //}
+        if (data.status === "ok" && data.articles) resolve(data);  
+        else {
+          reject(data);
+        }
       })
       .catch((err) => {
         reject(err);
