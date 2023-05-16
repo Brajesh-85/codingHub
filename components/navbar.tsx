@@ -44,12 +44,12 @@ const Navbar = () => {
                 </svg>
               </button>
               <div className="flex items-center justify-between">
-                <a href="/" className="items-center flex">
+                <Link href="/" className="items-center flex">
                 <svg aria-hidden="true" width="35" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
   <path d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" stroke-linecap="round" stroke-linejoin="round"></path>
 </svg>
                   <span className="pl-1">NewsHub</span>
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -59,74 +59,74 @@ const Navbar = () => {
                 className="hidden flex-col pt-6 lg:flex lg:flex-row lg:self-center lg:py-0"
               >
                 <li className="mb-3 lg:mb-0 lg:px-2 xl:px-2">
-                  <a
+                  <Link
                     id={"1"}
                     onClick={handleClick}
                     href={"/general?id=1"}
                     className="text-sm font-medium text-gray-900 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-500"
                   >
                     General
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-3 lg:mb-0 lg:px-2 xl:px-2">
-                  <a
+                  <Link
                     id={"2"}
                     onClick={handleClick}
                     href={"/business?id=2"}
                     className="text-sm font-medium text-gray-900 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-500"
                   >
               Business
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-3 lg:mb-0 lg:px-2 xl:px-2">
-                  <a
+                  <Link
                      id={"3"}
                      onClick={handleClick}
                      href={"/entertainment?id=3"}
                     className="text-sm font-medium text-gray-900 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-500"
                   >
                     Entertainment
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-3 lg:mb-0 lg:px-2 xl:px-2">
-                  <a
+                  <Link
                     id={"4"}
                     onClick={handleClick}
                     href={"/health?id=4"}
                     className="text-sm font-medium text-gray-900 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-500"
                   >
                     Health
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-3 lg:mb-0 lg:px-2 xl:px-2">
-                  <a
+                  <Link
                     id={"5"}
                     onClick={handleClick}
                     href={"/sports?id=5"}
                     className="text-sm font-medium text-gray-900 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-500"
                   >
                     Sports
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-3 hidden lg:mb-0 lg:px-2 xl:block xl:px-2">
-                  <a
+                  <Link
                     id={"6"}
                     onClick={handleClick}
                     href={"/science?id=5"}
                     className="text-sm font-medium text-gray-900 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-500"
                   >
                     Science
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-3 hidden lg:mb-0 lg:px-2 xl:block xl:px-2">
-                  <a
+                  <Link
                      id={"7"}
                      onClick={handleClick}
                      href={"/technology?id=5"}
                     className="text-sm font-medium text-gray-900 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-500"
                   >
                     Technology
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
