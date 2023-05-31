@@ -6,7 +6,7 @@ const newsService = () => {
       method: "GET"   
     })
       .then(async(response: any) => {
-        //console.log(response, response.status === 200)
+        console.log(response, response.status === 200)
         let data = await response.json();
         if (data.status === "ok" && data.articles) resolve(data);  
         else {
